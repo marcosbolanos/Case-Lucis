@@ -19,8 +19,8 @@ class PicoTerms(BaseModel):
 
 ESEARCH_URL = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi"
 EFETCH_URL = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi"
-EMAIL = "marcosqbv@gmail.com"  # Email to comply with NCBI usage guidelines
-API_KEY = "844017a24432a9d8abb84a670b50ef28f108"
+EMAIL = os.environ.get("EMAIL")
+API_KEY = os.environ.get("PUBMED_API_KEY")
 
 # This has to be appended to a search that uses the "Systematic Review" doctype filter
 systermatic_review_subset = "systematic [sb]"
