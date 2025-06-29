@@ -35,7 +35,10 @@ jsonschema==4.24.0
 jsonschema-specifications==2025.4.1
 jupyter_client==8.6.3
 jupyter_core==5.8.1
+langchain==0.3.26
+langchain-anthropic==0.3.16
 langchain-core==0.3.66
+langchain-text-splitters==0.3.8
 langsmith==0.4.4
 lark==1.2.2
 MarkupSafe==3.0.2
@@ -59,7 +62,6 @@ nvidia-nccl-cu12==2.26.2
 nvidia-nvjitlink-cu12==12.6.85
 nvidia-nvtx-cu12==12.6.77
 orjson==3.10.18
-outlines==1.0.2
 outlines_core==0.1.26
 packaging==24.2
 pandas==2.3.0
