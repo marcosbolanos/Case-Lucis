@@ -1,6 +1,6 @@
 # Case Study : AI Doctor Agent
 
-This is my solution for a software engineering case study. The objective was to build an AI agent that can answer questions regarding a lab test result, while searching PubMed for relevant litetature to provice advice backed with evidence. 
+This is my solution for a software engineering case study. The objective was to build an AI agent that can answer questions regarding a lab test result, while searching PubMed for relevant litetature to provide advice backed with evidence. 
 
 It was build using the `anthropic` python package, also sending requests to the PubMed API via a series of in-house integrations. 
 
@@ -35,7 +35,7 @@ The agent was also provided with mock information for the patient's age, sex, we
 
 Flattening the JSON into a table allowed to reduce the number of tokens for this context, while retaining information in a readable format. Sorting by name and date helped the LLM understand the chronological nature of the data. 
 
-After being asked a question, the agent can choose whether to use a PubMed search tool. Having been instructed not to give any medical claims without evidence, it seemingly always choses to use the tool. 
+After being asked a question, the agent can choose whether to use a PubMed search tool. Having been instructed not to give any medical claims without evidence, it seemingly always makes that choice.
 
 ### The PubMed search tool
 
